@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>MED BIO- Chapters</title>
+	<style>
+		:root{--sidebar-width:250px}
+		body{margin:0;font-family:Arial,Helvetica,sans-serif}
+		.page{
+			padding:16px;
+			box-sizing:border-box;
+		}
+		/* Top row of chapter boxes */
+		.chapter-row{
+			display:flex;
+			gap:12px;
+			align-items:stretch;
+			justify-content:space-between;
+			width:100%;
+			box-sizing:border-box;
+			margin-bottom:20px;
+		}
+		.chapter{
+			flex:1 1 0;
+			min-width:0;
+			background:#4CAF50;
+			color:#fff;
+			padding:12px 8px;
+			text-align:center;
+			border-radius:6px;
+			font-weight:700;
+			box-sizing:border-box;
+			display:flex;
+			flex-direction:column; /* stack title + button */
+			align-items:center;
+			justify-content:flex-start; /* keep title at the top */
+			padding-top:12px;
+			gap:10px; /* space title and buttons evenly */
+		}
+
+		.chapter-title{
+			width:100%;
+			text-align:center;
+			display:block;
+			font-weight:700;
+		}
+		/* make row wrap on small screens and keep boxes visually even */
+		@media (max-width:720px){
+			.chapter-row{flex-wrap:wrap}
+			.chapter{flex:0 0 48%;margin-bottom:12px}
+		}
+		@media (max-width:420px){
+			.chapter{flex:0 0 100%}
+		}
+
+		/* button style for section buttons */
+		.section-btn{
+			display:block;
+			width:100%;
+			margin:6px 0;
+			padding:8px 12px;
+			border-radius:6px;
+			border:none;
+			background:#1976d2;
+			color:#fff;
+			cursor:pointer;
+			font-weight:600;
+		}
+
+		/* make any section button fill its chapter width */
+		.chapter .section-btn{
+			width:100%;
+			box-sizing:border-box;
+			margin-top:8px;
+			padding:10px 12px;
+		}
+
+		/* stack title + button for the first chapter box and make button full width */
+		.chapter:first-child{flex-direction:column}
+		.chapter .section-btn{width:100%;margin-top:8px;padding:10px;border-radius:6px}
+	</style>
+</head>
+<body>
+	<div class="page">
+			<div class="chapter-row">
+				<div class="chapter">
+					<div class="chapter-title">PHOTOSYNTHESIS AND CELLULAR RESPIRATION by amoeba sisters</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=23ZzI6WZS28&list=PLwL0Myd7Dk1GNmS-BqgKHB0Due2phZ-Dg'">WHAT IS ATP</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=eJ9Zjc-jdys&list=PLwL0Myd7Dk1GNmS-BqgKHB0Due2phZ-Dg&index=2'">CELLULAR RESPIRATION</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=YbdkbCU20_M&list=PLwL0Myd7Dk1GNmS-BqgKHB0Due2phZ-Dg&index=3'">FERMENTATION</button>
+					<button class="section-btn" onclick="location.href='http://youtube.com/watch?v=CMiPYHNNg28&list=PLwL0Myd7Dk1GNmS-BqgKHB0Due2phZ-Dg&index=4'">PHOTOSYNTHESIS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=vSsGHhtMJZs&list=PLwL0Myd7Dk1GNmS-BqgKHB0Due2phZ-Dg&index=5'">CELLULAR RESPIRATION PRACTICE </button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=MSx4rgLV_Ro&list=PLwL0Myd7Dk1GNmS-BqgKHB0Due2phZ-Dg&index=6'">PHOTOSYNTHESIS PRACTICE</button>
+					
+				</div>
+				<div class="chapter">
+					<div class="chapter-title">ECOLOGY</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=f8G7IulYxiA&list=PLwL0Myd7Dk1GGOPNLiAod6tzrN_1An-4t&index=1'">AUTOTROPHS AND HETEROTROPHS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=-oVavgmveyY&list=PLwL0Myd7Dk1GGOPNLiAod6tzrN_1An-4t&index=2'">FOODWEBS AND ENERGY PYRAMIDS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=rNjPI84sApQ&list=PLwL0Myd7Dk1GGOPNLiAod6tzrN_1An-4t&index=3'">ECOLOGICAL RELATIONSHIPS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=NHqEthRCqQ4&list=PLwL0Myd7Dk1GGOPNLiAod6tzrN_1An-4t&index=4'">CARBON AND NITROGEN CYCLES</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=uqEUzgVAF6g&list=PLwL0Myd7Dk1GGOPNLiAod6tzrN_1An-4t&index=6'">ECOLOGICAL SUCCESSION</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=TitrRpMUt0I'">FLOW OF ENERGY AND MATTER THROUGH ECOSYSTEMS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=srpl5YRw-_U&list=PLwL0Myd7Dk1GGOPNLiAod6tzrN_1An-4t&index=7'">REVIEW</button>
+				</div>
+			    <div class="chapter">
+					<div class="chapter-title">EVOLUTION</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=W0TM4LQmoZY&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=1'">GENETIC DRIFT</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=7VM9YxmULuo&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=2'">NATURAL SELECTION</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=udZUaNKXbJA&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=3'">SPECIATION</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=GhHOjC4oxh8&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=4'">WHAT IS EVOLUTION</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=lIEoO5KdPvg&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=5'">EVIDENCE OF EVOLUTION</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=GieZ3pk9YVo&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=6'">MUTATIONS</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=0SCjhI86grU&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=7'">NATURAL SELECTION</button>   
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=DVouQRAKxYo&list=PLBM6kYXfUehb15nVHsgHvkh1MLwHqQUcK&index=8'">CLASSIFICATION</button>
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">MECHANISMS OF INHERITANCE</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=QVCjdNxJreE&list=PLwL0Myd7Dk1HwPKULqkJoNkfOnT3aTzq6'">MEIOSIS AND MITOSIS PLAYLIST(CELLS)</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=pv3Kj0UjiLE'">ALLELES AND GENES</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=DaqkjpOldzI'">MENDELIAN GENETICS AND LAWS OF HEREDITY</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=T6_wKPAbf2k'">STRUCTURE AND FUNCTION OF DNA PLAYLIST</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Qqe4thU-os8'">DNA REPLICATION</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=oefAI2x2CQM'">PROTEIN SYNTHESIS</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=ebIpkw3XapE'">GENE EXPRESSION AND REGULATION</button>
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">GENETIC VARIATION AND EVOLUTION</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=vl6Vlf2thvI'">MUTATIONS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=SRWXEMlI0_U'">EVOLUTION OF POPULATIONS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=tp4I9J5viS4'">ADAPTIVE VALUE OF BEHAVIOR</button>
+					
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">STRUCTIRE AND FUNCTION IN LIVING THINGS</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=skPOXcVvS5c'">MITOSIS AND THE CELL CYCLE</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=0JDCViWGn-0'">HUMAN BODY SYSTEMS</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=6mgkoqcm6Sg&t=398s'">CELL ORGANELLES AND STRUCTURES</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Iz0Q9nTZCw4&t=21s'">HOMEOSTATIS</button>
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">ALL PRACTICE TESTS</div>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfsihvqQGxAoyyduEW6CVytZtNb95ZezV3Pas_H8Jof9zuCXg/viewform'">CHAPTER 1 PRACTICE TEST</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfL7zD-E0-oqyQVGfUzZ-eundr-qlqLBJNhwP60DHquqVKFzg/viewform'">CHAPTER 2 PRACTICE TEST</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdrdaTtsZbE97DZ3D3BPVe7UqlMFibezpD6wsHUIIhlmgB-ng/viewform'">CHAPTER 3 PRACTICE TEST</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSczWV1VKqgOWU8t45lWzzMNvyXVX7sPHYygv-unbPibm3Ym8w/viewform'">CHAPTER 4 PRACTICE TEST</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdi0gE3H-iM4m5UUccNghJZPjg0UEoPdXyRWB6vZRBXl0Sjdg/viewform'">CHAPTER 5 PRACTICE TEST</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSe2Qo4A0tHaenuTs4RPADNbUhYZOmhlLJqbAVgHdqFAUb9K_A/viewform'">CHAPTER 6 PRACTICE TEST</button>
+                    <button class="section-btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSe37qPTba_8n6-vWde-1u2oTyqhiuutJFVWiZ1IMSo_z-gvNQ/viewform'">CHAPTER 7 PRACTICE TEST</button>
+                    
+				</div>
+			</div>
+		</div>
+
+		<!-- Page content goes here -->
+		
+
+	</div>
+</body>
+</html>

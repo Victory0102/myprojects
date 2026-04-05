@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Geometry - Chapters</title>
+	<style>
+		:root{--sidebar-width:250px}
+		body{margin:0;font-family:Arial,Helvetica,sans-serif}
+		.page{
+			padding:16px;
+			box-sizing:border-box;
+		}
+		/* Top row of chapter boxes */
+		.chapter-row{
+			display:flex;
+			gap:12px;
+			align-items:stretch;
+			justify-content:space-between;
+			width:100%;
+			box-sizing:border-box;
+			margin-bottom:20px;
+		}
+		.chapter{
+			flex:1 1 0;
+			min-width:0;
+			background:#4CAF50;
+			color:#fff;
+			padding:12px 8px;
+			text-align:center;
+			border-radius:6px;
+			font-weight:700;
+			box-sizing:border-box;
+			display:flex;
+			flex-direction:column; /* stack title + button */
+			align-items:center;
+			justify-content:flex-start; /* keep title at the top */
+			padding-top:12px;
+			gap:10px; /* space title and buttons evenly */
+		}
+
+		.chapter-title{
+			width:100%;
+			text-align:center;
+			display:block;
+			font-weight:700;
+		}
+		/* make row wrap on small screens and keep boxes visually even */
+		@media (max-width:720px){
+			.chapter-row{flex-wrap:wrap}
+			.chapter{flex:0 0 48%;margin-bottom:12px}
+		}
+		@media (max-width:420px){
+			.chapter{flex:0 0 100%}
+		}
+
+		/* button style for section buttons */
+		.section-btn{
+			display:block;
+			width:100%;
+			margin:6px 0;
+			padding:8px 12px;
+			border-radius:6px;
+			border:none;
+			background:#1976d2;
+			color:#fff;
+			cursor:pointer;
+			font-weight:600;
+		}
+
+		/* make any section button fill its chapter width */
+		.chapter .section-btn{
+			width:100%;
+			box-sizing:border-box;
+			margin-top:8px;
+			padding:10px 12px;
+		}
+
+		/* stack title + button for the first chapter box and make button full width */
+		.chapter:first-child{flex-direction:column}
+		.chapter .section-btn{width:100%;margin-top:8px;padding:10px;border-radius:6px}
+	</style>
+</head>
+<body>
+	<div class="page">
+			<div class="chapter-row">
+				<div class="chapter">
+					<div class="chapter-title">Chapter 1</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=j7OK8RM4nQA&list=PLKZCw-4MnXDpZZffAR0KGKZKwEU2WXE6v&index=1'">Open Chapter 1.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=2XK4dA4wlMw&list=PLKZCw-4MnXDpZZffAR0KGKZKwEU2WXE6v&index=2'">Open Chapter 1.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=MbOjzsw6vfw&list=PLKZCw-4MnXDpZZffAR0KGKZKwEU2WXE6v&index=3'">Open Chapter 1.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=S4oS67DDJww&list=PLKZCw-4MnXDpZZffAR0KGKZKwEU2WXE6v&index=5'">Open Chapter 1.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=jNEIV9AzG8Q&list=PLKZCw-4MnXDpZZffAR0KGKZKwEU2WXE6v&index=7'">Open Chapter 1.5</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=i_KIHKYf5Zc&list=PLKZCw-4MnXDpZZffAR0KGKZKwEU2WXE6v&index=8'">Open Chapter 1.6</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/document/d/1dpWbAJsIt3rqvhkiCM3K5y4Xll1aGJEjBff5ekr3UR8/edit?tab=t.oirk2qn19pi9#heading=h.gefdowgqx6r8'">Open Chapter 1.1 - 1.6 Practice Test</button>
+				</div>
+				<div class="chapter">
+					<div class="chapter-title">Chapter 2</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=LhS4VDLTPmU&list=PLMzabe8C88YNBsNPq6nrVYLcRloGHCbqz'">Open Chapter 2.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=lY6PPBD73TQ&list=PLMzabe8C88YNBsNPq6nrVYLcRloGHCbqz&index=2'">Open Chapter 2.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=ebEYiX0TGss&list=PLMzabe8C88YNBsNPq6nrVYLcRloGHCbqz&index=3'">Open Chapter 2.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=m-lZX9QXIp8&list=PLMzabe8C88YNBsNPq6nrVYLcRloGHCbqz&index=4'">Open Chapter 2.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=4OqbyAdHm3Y&list=PLMzabe8C88YNBsNPq6nrVYLcRloGHCbqz&index=5'">Open Chapter 2.5</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=1Z0bX1Yk3Lw&list=PLMzabe8C88YNBsNPq6nrVYLcRloGHCbqz&index=6'">Open Chapter 2.6</button>
+				</div>
+			    <div class="chapter">
+					<div class="chapter-title">Chapter 3</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Z1KgNxAjzZc&list=PLMzabe8C88YOcZssLpbpskpZbMDu7F30p'">Open Chapter 3.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=ne6IibYYHIQ&list=PLMzabe8C88YOcZssLpbpskpZbMDu7F30p&index=2'">Open Chapter 3.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=R6NX0XXvo_I&list=PLMzabe8C88YOcZssLpbpskpZbMDu7F30p&index=3'">Open Chapter 3.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=B_SMZIXIB1w&list=PLMzabe8C88YOcZssLpbpskpZbMDu7F30p&index=4'">Open Chapter 3.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=ctRKPhpW-8k&list=PLMzabe8C88YOcZssLpbpskpZbMDu7F30p&index=5'">Open Chapter 3.5</button>
+                    <button class="section-btn" onclick="location.href='https://docs.google.com/document/d/1Hrcr4sROC0_BaFx3W8GlmXGsIg5y8Hp6MJ3aHtE_miU/edit?usp=sharing'">Open Chapter 3 Practice Test</button>
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 4</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=ZLmdVNQqbNw&list=PLMzabe8C88YPiwrEQ5QfU4i7owwkC0AJ0'">Open Chapter 4.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=_Xqy4r6BxQk&list=PLMzabe8C88YPiwrEQ5QfU4i7owwkC0AJ0&index=2'">Open Chapter 4.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=45oTHcxdVuw&list=PLMzabe8C88YPiwrEQ5QfU4i7owwkC0AJ0&index=3'">Open Chapter 4.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=mxzqQZ01SFo&list=PLMzabe8C88YPiwrEQ5QfU4i7owwkC0AJ0&index=4'">Open Chapter 4.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=p84SsCfLM1c&list=PLMzabe8C88YPiwrEQ5QfU4i7owwkC0AJ0&index=5'">Open Chapter 4.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Q_NqM4ks2jo&list=PLMzabe8C88YPiwrEQ5QfU4i7owwkC0AJ0&index=6'">Open Chapter 4.6</button>
+                    <button class="section-btn" onclick="location.href='https://docs.google.com/document/d/1u-9ahIN_nRXEyVlnMttTfx8nzL8FClRG9-sHSYCza84/edit?usp=sharing'">Open Chapter 4 Practice Test</button>
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 5</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Hw4SPLRo40A&list=PLMzabe8C88YN3hf_sQZKL0K9l1lD-S9i6'">Open Chapter 5.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=H9HeL-nNFik&list=PLMzabe8C88YN3hf_sQZKL0K9l1lD-S9i6&index=2'">Open Chapter 5.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=hbx8WZq93Eg&list=PLMzabe8C88YN3hf_sQZKL0K9l1lD-S9i6&index=3'">Open Chapter 5.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=mNBE9KySHEk&list=PLMzabe8C88YN3hf_sQZKL0K9l1lD-S9i6&index=4'">Open Chapter 5.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=k4WY5tbj2Kw&list=PLMzabe8C88YN3hf_sQZKL0K9l1lD-S9i6&index=5'">Open Chapter 5.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=f4in_mnLQtQ&list=PLMzabe8C88YN3hf_sQZKL0K9l1lD-S9i6&index=6'">Open Chapter 5.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=M_i2tjCnpRc&list=PLMzabe8C88YN3hf_sQZKL0K9l1lD-S9i6&index=7'">Open Chapter 5.7</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/document/d/107bAdmiVzsEsd1rWu1nU7KFz77QXPNUYhAiBAus98Uw/edit?usp=sharing'">Open Chapter 5 Practice Test</button>
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 6</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=KWnWlo4YjEk&list=PLMzabe8C88YPKDBP26eDqDHmX1KOg6mv9'">Open Chapter 6.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=BaaE4E-6DXM&list=PLMzabe8C88YPKDBP26eDqDHmX1KOg6mv9&index=3'">Open Chapter 6.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=y5j7papLXp4&list=PLMzabe8C88YPKDBP26eDqDHmX1KOg6mv9&index=2'">Open Chapter 6.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=8l1Yz-G6W0Y&list=PLMzabe8C88YPKDBP26eDqDHmX1KOg6mv9&index=5'">Open Chapter 6.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Uj9ecn8yS3Y&list=PLMzabe8C88YPKDBP26eDqDHmX1KOg6mv9&index=4'">Open Chapter 6.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=eUFmGORZkqs&list=PLMzabe8C88YPKDBP26eDqDHmX1KOg6mv9&index=6'">Open Chapter 6.6</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/document/d/1HC1WJHkOe7SJnx-ewe_Jtjax9DYJohmpWKaMx-tyrgY/edit?usp=sharing'">Open Chapter 6 Practice Test</button>
+                    
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 7</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=BiXpWEjeCpQ&list=PLMzabe8C88YPj4a2x5brXpFFrXjGKtyC9'">Open Chapter 7.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=RZSndjADdDQ&list=PLMzabe8C88YPj4a2x5brXpFFrXjGKtyC9&index=3'">Open Chapter 7.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=6QjftSEmCqo&list=PLMzabe8C88YPj4a2x5brXpFFrXjGKtyC9&index=2'">Open Chapter 7.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=umrUT1zmBqM&list=PLMzabe8C88YPj4a2x5brXpFFrXjGKtyC9&index=4'">Open Chapter 7.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=EylBLv8wXjc&list=PLMzabe8C88YPj4a2x5brXpFFrXjGKtyC9&index=5'">Open Chapter 7.5</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/document/d/1heN17vNUIrzjo5fqHMIyuQ1zNwG1ko1z2TTWh4f04G4/edit?usp=sharing'">Open Chapter 7 Practice Test</button>
+
+                    
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 8</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=EMBzfxyA8AI&list=PLe8mNQrHGP70aFQ3p13JueL-rml-saJjI&index=1'">Open Chapter 8.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=ADmqdvMSZoc&list=PLe8mNQrHGP70aFQ3p13JueL-rml-saJjI&index=2'">Open Chapter 8.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=cUGZjmanalU&list=PLe8mNQrHGP70aFQ3p13JueL-rml-saJjI&index=3'">Open Chapter 8.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=il21IuKtRrY&list=PLe8mNQrHGP70aFQ3p13JueL-rml-saJjI&index=4'">Open Chapter 8.4</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/document/d/16nYatHQFZhp3KWkZM-1ulnkbr4rWIWUwtP6cQvJlKMc/edit?usp=sharing'">Open Chapter 8 Practice Test</button>
+					
+
+                    
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 9</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=d288Aq7HgrM&list=PLMzabe8C88YO_ftGGEZg6TsWeSOoHJGTh'">Open Chapter 9.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=xU-y3X6I_zk&list=PLMzabe8C88YO_ftGGEZg6TsWeSOoHJGTh&index=2'">Open Chapter 9.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=cOx_XL9wh50&list=PLMzabe8C88YO_ftGGEZg6TsWeSOoHJGTh&index=3'">Open Chapter 9.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=JoK_wErjFpI&list=PLMzabe8C88YO_ftGGEZg6TsWeSOoHJGTh&index=4'">Open Chapter 9.4 and 9.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=OiEeByGF49Y&list=PLMzabe8C88YO_ftGGEZg6TsWeSOoHJGTh&index=5'">Open Chapter 9.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=hwI7uUe5Z50&list=PLMzabe8C88YO_ftGGEZg6TsWeSOoHJGTh&index=6'">Open Chapter 9.7</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/document/d/107bAdmiVzsEsd1rWu1nU7KFz77QXPNUYhAiBAus98Uw/edit?usp=sharing'">Open Chapter 9 Practice Test</button>
+					
+
+                    
+				</div>
+            <div class="chapter">
+					<div class="chapter-title">Chapter 10</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=9nXLeEEJnMo&list=PLMzabe8C88YMoxksrGQ_nTEp9rQ_jBQD9'">Open Chapter 10.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Yg2rTfe84o4&list=PLMzabe8C88YMoxksrGQ_nTEp9rQ_jBQD9&index=2'">Open Chapter 10.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=GSG16v_QDAU&list=PLMzabe8C88YMoxksrGQ_nTEp9rQ_jBQD9&index=3'">Open Chapter 10.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=JiDhhFRI620&list=PLMzabe8C88YMoxksrGQ_nTEp9rQ_jBQD9&index=4'">Open Chapter 10.4</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=4yghxmI0OgQ&list=PLMzabe8C88YMoxksrGQ_nTEp9rQ_jBQD9&index=5'">Open Chapter 10.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=gs-dtIIFNhM&list=PLMzabe8C88YMoxksrGQ_nTEp9rQ_jBQD9&index=6'">Open Chapter 10.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=xVfJFdZE3T4&list=PLMzabe8C88YMoxksrGQ_nTEp9rQ_jBQD9&index=7'">Open Chapter 10.7</button>
+					<button class ="section-btn" onclick="location.href='https://docs.google.com/document/d/1BSz_Jgsy8TZ9mcStBhI5dkVTzlKp0z8klYKFZixXxN0/edit?usp=sharing'">Open Chapter 10 Practice Test</button>
+
+                    
+				</div>
+            <div class="chapter">
+					<div class="chapter-title">Chapter 11</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=_tcK1nb2It4&list=PLMzabe8C88YOU8d_baWxZi-lgQwQSSqlB&index=2'">Open Chapter 11.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=m3QYBGZU36g&list=PLMzabe8C88YOU8d_baWxZi-lgQwQSSqlB&index=1'">Open Chapter 11.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=5hzFF9u6nnI&list=PLMzabe8C88YOU8d_baWxZi-lgQwQSSqlB&index=3'">Open Chapter 11.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=kI2FdsQkYrI&list=PLMzabe8C88YOU8d_baWxZi-lgQwQSSqlB&index=4'">Open Chapter 11.4</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=mNV-bqy--Pg&list=PLMzabe8C88YOU8d_baWxZi-lgQwQSSqlB&index=5'">Open Chapter 11.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=WaN6Fb0NzRs&list=PLMzabe8C88YOU8d_baWxZi-lgQwQSSqlB&index=6'">Open Chapter 11.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=dnblha63H_8&list=PLMzabe8C88YOU8d_baWxZi-lgQwQSSqlB&index=7'">Open Chapter 11.7</button>
+					<button class="section-btn" onclick="location.href='https://docs.google.com/document/d/1Xvwv8QJveWjrZZOFSjY5w4zj4u_eAZqnLzPm1K2uMV0/edit?usp=sharing'">Open Chapter 11 Practice Test</button>
+					
+
+                    
+				</div>
+		</div>
+
+		<!-- Page content goes here -->
+		
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Geometry - Chapters</title>
+	<style>
+		:root{--sidebar-width:250px}
+		body{margin:0;font-family:Arial,Helvetica,sans-serif}
+		.page{
+			padding:16px;
+			box-sizing:border-box;
+		}
+		/* Top row of chapter boxes */
+		.chapter-row{
+			display:flex;
+			gap:12px;
+			align-items:stretch;
+			justify-content:space-between;
+			width:100%;
+			box-sizing:border-box;
+			margin-bottom:20px;
+		}
+		.chapter{
+			flex:1 1 0;
+			min-width:0;
+			background:#4CAF50;
+			color:#fff;
+			padding:12px 8px;
+			text-align:center;
+			border-radius:6px;
+			font-weight:700;
+			box-sizing:border-box;
+			display:flex;
+			flex-direction:column; /* stack title + button */
+			align-items:center;
+			justify-content:flex-start; /* keep title at the top */
+			padding-top:12px;
+			gap:10px; /* space title and buttons evenly */
+		}
+
+		.chapter-title{
+			width:100%;
+			text-align:center;
+			display:block;
+			font-weight:700;
+		}
+		/* make row wrap on small screens and keep boxes visually even */
+		@media (max-width:720px){
+			.chapter-row{flex-wrap:wrap}
+			.chapter{flex:0 0 48%;margin-bottom:12px}
+		}
+		@media (max-width:420px){
+			.chapter{flex:0 0 100%}
+		}
+
+		/* button style for section buttons */
+		.section-btn{
+			display:block;
+			width:100%;
+			margin:6px 0;
+			padding:8px 12px;
+			border-radius:6px;
+			border:none;
+			background:#1976d2;
+			color:#fff;
+			cursor:pointer;
+			font-weight:600;
+		}
+
+		/* make any section button fill its chapter width */
+		.chapter .section-btn{
+			width:100%;
+			box-sizing:border-box;
+			margin-top:8px;
+			padding:10px 12px;
+		}
+
+		/* stack title + button for the first chapter box and make button full width */
+		.chapter:first-child{flex-direction:column}
+		.chapter .section-btn{width:100%;margin-top:8px;padding:10px;border-radius:6px}
+	</style>
+</head>
+<body>
+	<div class="page">
+			<div class="chapter-row">
+				<div class="chapter">
+					<div class="chapter-title">Chapter 1</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=8SuP1TaCAPQ&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=1'">Open Chapter 1.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=u5iT45_9Uyw&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=2'">Open Chapter 1.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=WCAk6QAOfKU&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=3'">Open Chapter 1.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=9vdxNUqneag&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=4'">Open Chapter 1.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=VTC-peeC05s&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=6'">Open Chapter 1 REVIEW</button>
+				</div>
+				<div class="chapter">
+					<div class="chapter-title">Chapter 2</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Aab7-6bq6KU&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=7'">Open Chapter 2.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=OGufXS6Yhds&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=8'">Open Chapter 2.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=PJ4SztRbbe4&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=9'">Open Chapter 2.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=7FgGWdw08mA&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=10'">Open Chapter 2.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=tyimhKYBvYk&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=11'">Open Chapter 2 REVIEW</button>
+				</div>
+			    <div class="chapter">
+					<div class="chapter-title">Chapter 3</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=uVUeTfBjpok&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=12'">Open Chapter 3.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=23ugSakkApM&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=13'">Open Chapter 3.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Qc49nbGcGCc&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=14'">Open Chapter 3.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=E7SiyRpxfBo&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=15'">Open Chapter 3.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=vOsFxu9-qFA&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=16'">Open Chapter 3.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=61ufrhL4Kqc&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=17'">Open Chapter 3.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=OMAWGiMQeqk&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=18'">Open Chapter 3 REVIEW</button>
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 4</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=yugecAJiVyA&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=19'">Open Chapter 4.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=sg6fDh2U6YI&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=20'">Open Chapter 4.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=jmdiu7WCiXA&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=21'">Open Chapter 4.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=7Db5WgECLwI&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=22'">Open Chapter 4.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Kt61IHruDvo&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=23'">Open Chapter 4.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=SNc37tFiSV8&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=24'">Open Chapter 4.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=JCFMXbcciLU&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=25'">Open Chapter 4.7</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=-1bvmle2fZs&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=26'">Open Chapter 4.8</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=6rSW6QWDR54&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=27'">Open Chapter 4.9</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=a0JndqqQ--I&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=28'">Open Chapter 4b REVIEW</button>
+					
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 5</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=B90awAdAa44&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=29'">Open Chapter 5.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=u5hxyLd6f-w&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=30'">Open Chapter 5.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=lRu6Qlu3BH0&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=31'">Open Chapter 5.3</button>
+					<button class="section-btn" onclick="location.href='http://youtube.com/watch?v=ZHgr1nBs7kM&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=32'">Open Chapter 5.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=3OTaz-8B0mM&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=33'">Open Chapter 5.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=zIoXusXu7Bc&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=35'">Open Chapter 5.6</button>
+                  
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 6</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=5d0PWNZOU80&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=36'">Open Chapter 6.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=zFMB04tphTA&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=37'">Open Chapter 6.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=vOF6TYhOl7M&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=38'">Open Chapter 6.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=VLQxM22WAPQ&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=39'">Open Chapter 6.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=EiXfl231QlE&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=40'">Open Chapter 6.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=9BE4yWsfUqo&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=41'">Open Chapter 6.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=zWjrto_-i4E&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=42'">Open Chapter 6.7</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=IrGgTZK6l-o&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=43'">Open Chapter 6 REVIEW</button>
+                    
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 7</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=3oJaMyS6jzE&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=44'">Open Chapter 7.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=OuVDKofkGkY&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=45'">Open Chapter 7.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=AAWQ27ccsW8&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=46'">Open Chapter 7.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=v9owgpcorP8&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=47'">Open Chapter 7.4</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=Xfpb-s5tfVc&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=48'">Open Chapter 7.5</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=H7V0bEpBhSQ&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=49'">Open Chapter 7 REVIEW</button>
+
+                    
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 8</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=PUZYtVgf2Qs&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=50'">Open Chapter 8.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=DRGcx5HwwuQ&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=51'">Open Chapter 8.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=HojtR555D3Q&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=52'">Open Chapter 8.3</button>
+					
+					
+
+                    
+				</div>
+			<div class="chapter">
+					<div class="chapter-title">Chapter 9</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=ZLXBQutWyBI&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=53'">Open Chapter 9.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=j7TctSy8Qx8&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=55'">Open Chapter 9.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=03IW09qxeLo&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=56'">Open Chapter 9.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=fYnrQHoNQ2U&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=58'">Open Chapter 9.4</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=HZux9N0GCKg&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=59'">Open Chapter 9.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=-XRp3I3CC0g&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=60'">Open Chapter 9.6</button>
+					
+					
+
+                    
+				</div>
+            <div class="chapter">
+					<div class="chapter-title">Chapter 10</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=NIapyu5m7qg&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=63'">Open Chapter 10.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=vk9nTGdpO5Q&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=64'">Open Chapter 10.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=jwCAAWiq-SY&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=65'">Open Chapter 10.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=0yg7MhsE5H8&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=66'">Open Chapter 10.4</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=S4vqKZbZXo4&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=67'">Open Chapter 10.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=24sA7lKtEao&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=68'">Open Chapter 10.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=VU3shPBssag&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=69'">Open Chapter 10 REVIEW</button>
+                  
+                    
+				</div>
+            <div class="chapter">
+					<div class="chapter-title">Chapter 11</div>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=kr6QVSti0To&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=70'">Open Chapter 11.1</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=mYztLgGwi68&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=71'">Open Chapter 11.2</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=DQe44Vu6hII&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=72'">Open Chapter 11.3</button>
+					<button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=S7oTQ-ffdsQ&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=73'">Open Chapter 11.4</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=QbpbA01vYSc&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=74'">Open Chapter 11.5</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=kI93FIUAB-M&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=75'">Open Chapter 11.6</button>
+                    <button class="section-btn" onclick="location.href='https://www.youtube.com/watch?v=w9GXmFj4-T0&list=PLHjriFxuDbV7r_hf_kD4Js5lYsjE0D7eH&index=76'">Open Chapter 11 REVIEW</button>
+                   
+					
+                    
+				</div>
+		</div>
+
+		<!-- Page content goes here -->
+		
+
+	</div>
+</body>
+</html>

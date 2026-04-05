@@ -1,0 +1,138 @@
+<style>
+                    /* Right sidebar that fills full page height */
+                    .sidebar {
+                      position: fixed;
+                      top: 0;
+                      left: 0;
+                      bottom: 0;
+                      width: 250px;
+                        display: flex;
+                        flex-direction: column;
+                        background: transparent;
+                        box-sizing: border-box;
+                        padding: 0;
+                        gap: 8px;
+                    }
+
+                    .big-rect {
+                        height: 75px;
+                        background-color: #4CAF50;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0;
+                        font-size: 24px;
+                        box-sizing: border-box;
+                    }
+
+                    .buttons-container {
+                        flex: 1; /* fill remaining vertical space */
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        padding: 0; /* remove horizontal padding so buttons can match sidebar width */
+                        box-sizing: border-box;
+                        justify-content: stretch;
+                        align-items: center; /* center buttons horizontally inside the sidebar */
+                    }
+
+                    .rectBtn {
+                        width: 250px; /* same width as sidebar */
+                        flex: 1; /* make all buttons equal height and fill available vertical space */
+                        color: white;
+                        border: none;
+                        border-radius: 0;
+                        cursor: pointer;
+                        font-size: 16px;
+                        box-sizing: border-box;
+                        text-align: center; /* center the label */
+                        padding: 0 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .geometry { background-color: #264653; }
+                    .algebra2     { background-color: #f4a261; }
+                    .precalc     { background-color: #2a9d8f; }
+                    .calcab    { background-color: #e76f51; }
+                    .calcbc    { background-color: #264653; }
+                    .stats          { background-color: #e9c46a; color: #000; }
+
+                    body { margin: 0; }
+
+                    /* make sure main content doesn't sit under the sidebar
+                       keep header at top; center only the main-center area */
+                    .main {
+                      margin-left: 250px; /* space for the sidebar on the left */
+                      min-height: 100vh;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: stretch;
+                      justify-content: flex-start;
+                      box-sizing: border-box;
+                      padding: 16px;
+                    }
+
+                    .main-header {
+                      text-align: center;
+                      padding: 8px 0;
+                    }
+
+                    .main-center {
+                      flex: 1; /* fill remaining vertical space */
+                      display: flex;
+                      align-items: center; /* vertical center within remaining space */
+                      justify-content: center; /* horizontal center */
+                      text-align: center;
+                      box-sizing: border-box;
+                      padding: 16px;
+                    }
+                </style>
+
+                <div class="main">
+                    <div class="main-header">
+                        <h1>STUDY SPHERE</h1>
+                    </div>
+
+                    <div class="main-center">
+                      <div style="max-width:700px; font-family: Arial, sans-serif; line-height:1.6;">
+                        <h2 style="margin-top:0;">Welcome to Study Sphere</h2>
+
+                        <p>
+                          This platform is filled with study resources shared by students who have already taken the classes you’re in now. Explore, learn, and use these materials to support your success.
+                        </p>
+
+                        <p>
+                          If you’d like to contribute to the project, feel free to reach out at
+                          <strong>victoryunegbu2@gmail.com</strong>. All contributions will be fully credited to the uploader.
+                        </p>
+
+                        <p>When contacting me, please include:</p>
+
+                        <ul>
+                          <li>Your name</li>
+                          <li>The subject you’re contributing to</li>
+                          <li>The document or resource you’d like to upload</li>
+                        </ul>
+
+                        <p>Thank you for helping build a community where students support students.</p>
+                      </div>
+                    </div>
+                <aside class="sidebar">
+                    <div class="big-rect">MATHEMATICS</div>
+                    <div class="buttons-container">
+                        <button align= "center" class="rectBtn geometry" onclick="window.location.href='geometry.html'">GEOMETRY</button>
+                        <button align = "center" class="rectBtn algebra2" onclick="window.location.href='algebra2.html'">ALGEBRA 2</button>
+                        <button align ="center" class="rectBtn precalc" onclick="window.location.href='precalc.html'">AP PRECALC</button>
+                        <button align = "center" class="rectBtn calcab" onclick="window.location.href='calcab.html'">AP CALC AB</button>
+                        <button align = "center" class="rectBtn calcbc" onclick="window.location.href='calcbc.html'">AP CALC BC</button>
+                        <button align = "center" class="rectBtn stats" onclick="window.location.href='stats.html'">AP STATS</button>
+                    </div>
+                </aside>
+
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+</body>
+</html>

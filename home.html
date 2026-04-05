@@ -1,0 +1,140 @@
+                <style>
+                    /* Right sidebar that fills full page height */
+                    .sidebar {
+                      position: fixed;
+                      top: 0;
+                      left: 0;
+                      bottom: 0;
+                      width: 250px;
+                        display: flex;
+                        flex-direction: column;
+                        background: transparent;
+                        box-sizing: border-box;
+                        padding: 0;
+                        gap: 8px;
+                    }
+
+                    .big-rect {
+                        height: 75px;
+                        background-color: #4CAF50;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0;
+                        font-size: 24px;
+                        box-sizing: border-box;
+                    }
+
+                    .buttons-container {
+                        flex: 1; /* fill remaining vertical space */
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        padding: 0; /* remove horizontal padding so buttons can match sidebar width */
+                        box-sizing: border-box;
+                        justify-content: stretch;
+                        align-items: center; /* center buttons horizontally inside the sidebar */
+                    }
+
+                    .rectBtn {
+                        width: 250px; /* same width as sidebar */
+                        flex: 1; /* make all buttons equal height and fill available vertical space */
+                        color: white;
+                        border: none;
+                        border-radius: 0;
+                        cursor: pointer;
+                        font-size: 16px;
+                        box-sizing: border-box;
+                        text-align: center; /* center the label */
+                        padding: 0 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .mathematics { background-color: #264653; }
+                    .english     { background-color: #f4a261; }
+                    .science     { background-color: #2a9d8f; }
+                    .language    { background-color: #e76f51; }
+                    .elective    { background-color: #264653; }
+                    .AP          { background-color: #e9c46a; color: #000; }
+
+                    body { margin: 0; }
+
+                    /* make sure main content doesn't sit under the sidebar
+                       keep header at top; center only the main-center area */
+                    .main {
+                      margin-left: 250px; /* space for the sidebar on the left */
+                      min-height: 100vh;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: stretch;
+                      justify-content: flex-start;
+                      box-sizing: border-box;
+                      padding: 16px;
+                    }
+
+                    .main-header {
+                      text-align: center;
+                      padding: 8px 0;
+                    }
+
+                    .main-center {
+                      flex: 1; /* fill remaining vertical space */
+                      display: flex;
+                      align-items: center; /* vertical center within remaining space */
+                      justify-content: center; /* horizontal center */
+                      text-align: center;
+                      box-sizing: border-box;
+                      padding: 16px;
+                    }
+                </style>
+
+                <div class="main">
+                    <div class="main-header">
+                        <h1>STUDY SPHERE</h1>
+                    </div>
+
+                    <div class="main-center">
+                      <div style="max-width:700px; font-family: Arial, sans-serif; line-height:1.6;">
+                        <h2 style="margin-top:0;">Welcome to Study Sphere</h2>
+
+                        <p>
+                          This platform is filled with study resources shared by students who have already taken the classes you’re in now. Explore, learn, and use these materials to support your success.
+                        </p>
+
+                        <p>
+                          If you’d like to contribute to the project, feel free to reach out at
+                          <strong>victoryunegbu2@gmail.com</strong>. All contributions will be fully credited to the uploader.
+                        </p>
+
+                        <p>When contacting me, please include:</p>
+
+                        <ul>
+                          <li>Your name</li>
+                          <li>The subject you’re contributing to</li>
+                          <li>The document or resource you’d like to upload</li>
+                        </ul>
+
+                        <p>Thank you for helping build a community where students support students.</p>
+                        <p> If your AP class is part of a major subject like math and english please look through the subject's subsection
+                        </p>
+                        <p>if your ap class is an elective look through the ap section </p>                      </div>
+                    </div>
+                <aside class="sidebar">
+                    <div class="big-rect">SUBJECTS</div>
+                    <div class="buttons-container">
+                        <button align= "center" class="rectBtn mathematics" onclick="window.location.href='mathematics.html'">MATHEMATICS</button>
+                        <button align = "center" class="rectBtn english" onclick="window.location.href='english.html'">ENGLISH</button>
+                        <button align ="center" class="rectBtn science" onclick="window.location.href='science.html'">SCIENCE</button>
+                        <button align = "center" class="rectBtn language" onclick="window.location.href='language.html'">LANGUAGES</button>
+                        <button align = "center" class="rectBtn elective" onclick="window.location.href='elective.html'">ELECTIVE</button>
+                        <button align = "center" class="rectBtn AP" onclick="window.location.href='ap.html'">AP</button>
+                    </div>
+                </aside>
+
+        <!-- Link to the JavaScript file -->
+        <script src="script.js"></script>
+</body>
+</html>
